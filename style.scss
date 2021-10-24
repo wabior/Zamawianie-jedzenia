@@ -1,0 +1,80 @@
+$bg-color: rgba(17, 16, 16, 0.835);
+
+body{
+    background-color: $bg-color;
+    color: rgb(250, 244, 244);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.container{
+    /* border: 1px solid blanchedalmond; */
+    width: 700px;
+    min-height: 70vh;
+    margin: 50px auto;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 0 5px black;
+}
+
+
+input{
+    padding: 10px;
+    margin: 0 10px;
+    box-shadow: 0 0 10px 2px black;
+    border: 0;
+    border-radius: 3px;
+    letter-spacing: 1px;
+
+
+    &#order{
+        max-width: 50%;
+    }
+
+
+    &[type=submit]{
+        cursor: pointer;
+        transition: background-color .2s;
+    }
+
+    &[type=submit]:hover{
+        background-color: rgb(58, 211, 58);
+    }
+}
+
+h1{
+    margin: 30px;
+}
+
+li{
+    padding: 5px;
+    background-color: lighten($bg-color, $amount: 10%);
+
+    &:nth-of-type(even){
+        background-color: lighten($bg-color, $amount: 20%);
+        ;
+    }
+}
+
+h3 {
+    text-align: center;
+}
+
+.person-submitted{
+    display: inline-block;
+    text-align: left;
+    width: 200px;
+    /* background-color: rgb(218, 174, 174);  */
+    /* border: 1px solid wheat; */
+}
+
+.order-submitted{
+    display: inline-block;
+    text-align: left;
+    min-width: 200px;
+    // background-color: rgb(128, 90, 90); 
+    /* border: 0.5px solid wheat; */
+}
+
+// .clicked{
+//     background-color: yellowgreen;
+// }

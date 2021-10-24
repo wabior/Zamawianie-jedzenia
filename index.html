@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zamawianie jedzenia</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Zamawianie jedzenia</h1>
+        </header>
+        <section>
+            <form>
+                <input type="text" id="person" placeholder="osoba" required oninvalid="this.setCustomValidity('podaj imię')"  oninput="this.setCustomValidity('')">
+                <input type="text" id="order" placeholder="zamówienie" required oninvalid="this.setCustomValidity('zamów coś')"  oninput="this.setCustomValidity('')">
+                <input type="submit" value="zamów">
+            </form>
+        </section>
+    
+        <section>
+            <ol id="orders">
+                <h3>Zamówienie:</h3>
+            </ol>
+            <p id="warning"></p>
+        </section>
+    </div>
+
+    <script
+			  src="https://code.jquery.com/jquery-3.6.0.js"
+			  integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+			  crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+</body>
+</html>
