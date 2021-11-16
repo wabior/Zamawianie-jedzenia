@@ -5,14 +5,23 @@ body {
 }
 
 .container {
-  /* border: 1px solid blanchedalmond; */
-  width: 700px;
+  width: 100vw;
+  max-width: 700px;
   min-height: 70vh;
   margin: 50px auto;
   padding: 20px;
   text-align: center;
   -webkit-box-shadow: 0 0 5px black;
           box-shadow: 0 0 5px black;
+}
+
+form {
+  padding: 0 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
 }
 
 input {
@@ -26,7 +35,11 @@ input {
 }
 
 input#order {
-  max-width: 50%;
+  width: 100%;
+}
+
+input#person {
+  width: 20%;
 }
 
 input[type=submit] {
@@ -41,6 +54,10 @@ input[type=submit]:hover {
 
 h1 {
   margin: 30px;
+}
+
+ol {
+  padding: 20px 40px;
 }
 
 li {
